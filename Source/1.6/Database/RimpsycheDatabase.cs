@@ -637,6 +637,15 @@ namespace Maux36.RimPsyche
                                 new FacetGate(Facet.Compassion, 25f, 25f)
                             });
             }
+            
+            if (ModsConfig.IsActive("archersaiter.rjw.traits"))
+            {
+                Log.Message("[Rimpsyche] RJW Unleashed Traits gate data added");
+                RegisterTraitGate(new Pair<string, int>("RJW_Traits_Playful_Sadist", 0), new List<FacetGate>
+                            {
+                                new FacetGate(Facet.Compassion, -25f, 25f)
+                            });
+            }
 
             if (ModsConfig.IsActive("chjees.androids14"))
             {
