@@ -645,6 +645,10 @@ namespace Maux36.RimPsyche
                             {
                                 new FacetGate(Facet.Compassion, -25f, 25f)
                             });
+                RegisterTraitGate(new Pair<string, int>("RJW_Traits_Brutal_Sadist", 0), new List<FacetGate>
+                            {
+                                new FacetGate(Facet.Compassion, -35f, 15f)
+                            });
             }
 
             if (ModsConfig.IsActive("chjees.androids14"))
